@@ -405,12 +405,13 @@ body {
   .region { font-size: 14px; padding: 8px 14px; }
   .contact-box {
   display: block;
-  padding: 22px;
+  padding: 0;
   border-radius: 22px;
-  background: #111111;
-  border: none;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.10);
   margin-top: 25px;
+  overflow: hidden;
 }
 
 .contact-labels {
@@ -430,21 +431,24 @@ body {
 .contact-values::before {
   content: "DIRECT CONTACT";
   display: block;
+  background: #111111;
   color: #f6c400;
   font-size: 13px;
   font-weight: 900;
-  letter-spacing: 1.5px;
-  margin-bottom: 14px;
+  letter-spacing: 1.8px;
+  padding: 16px 20px;
+  border-bottom: 3px solid #f6c400;
 }
 
 .contact-values::after {
-  content: "☎  +968 94369437\a✉  susham@aaaserves.com\a@  aaa@aaaserves.com\a🌐  www.aaaserves.com";
+  content: "Phone        +968 94369437\aEmail        susham@aaaserves.com\aGeneral      aaa@aaaserves.com\aWebsite      www.aaaserves.com";
   white-space: pre-line;
   display: block;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 2;
+  color: #111111;
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 2.1;
+  padding: 18px 20px 20px;
 }
   .innovate-qr { grid-template-columns: 1fr; gap: 25px; }
   .innovate { border-right: none; padding-right: 0; text-align: center; }
