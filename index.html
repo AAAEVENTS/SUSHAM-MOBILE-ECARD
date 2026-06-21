@@ -357,54 +357,109 @@ body {
 }
 
 .query-footer {
-  margin: 0 45px 45px;
-  padding: 25px;
-  border-radius: 18px;
+  margin: 0 45px 50px;
+  padding: 0;
+  border-radius: 24px;
   background: #ffffff;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
   display: grid;
-  grid-template-columns: 1fr 1px 1fr;
-  gap: 25px;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.query-footer > div:first-child {
+  padding: 32px;
+  background: #ffffff;
 }
 
 .query-footer h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 900;
 }
 
 .query-footer input,
 .query-footer textarea {
   width: 100%;
-  border: 1px solid #cccccc;
-  border-radius: 8px;
-  padding: 12px;
-  margin-bottom: 10px;
-  font-size: 15px;
+  border: 1px solid #dddddd;
+  border-radius: 14px;
+  padding: 15px 16px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  background: #fafafa;
+  outline: none;
 }
 
-.query-footer textarea { height: 85px; }
+.query-footer input:focus,
+.query-footer textarea:focus {
+  border-color: #f6c400;
+  background: #ffffff;
+}
+
+.query-footer textarea {
+  height: 110px;
+  resize: none;
+}
 
 .send-btn {
   background: #f6c400;
+  color: #111111;
   border: none;
-  padding: 12px 35px;
-  border-radius: 25px;
+  padding: 14px 38px;
+  border-radius: 30px;
+  font-size: 16px;
   font-weight: 900;
   cursor: pointer;
+  box-shadow: 0 8px 20px rgba(246,196,0,0.35);
 }
 
-.vertical-line { background: #f6c400; }
+.vertical-line {
+  display: none;
+}
+
+.footer-info {
+  background: #111111;
+  color: #ffffff;
+  padding: 35px 32px;
+  position: relative;
+}
+
+.footer-info::before {
+  content: "";
+  width: 70px;
+  height: 5px;
+  background: #f6c400;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 22px;
+}
 
 .footer-info h2 {
-  font-size: 26px;
-  margin-bottom: 18px;
+  color: #f6c400;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 22px;
 }
 
-.footer-info p {
+.footer-address {
+  color: #ffffff;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
+.footer-contact-list {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.18);
+}
+
+.footer-contact-list div {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
 @media(max-width: 700px) {
   body { background: #ffffff; }
   .wrapper { width: 100%; max-width: 100%; }
@@ -425,11 +480,52 @@ body {
   margin-top: 28px;
 }
 
-.contact-item {
-  padding: 16px;
-  border-radius: 16px;
+.query-footer {
+  margin: 0 22px 40px;
+  grid-template-columns: 1fr;
+  border-radius: 22px;
 }
 
+.query-footer > div:first-child {
+  padding: 26px 22px;
+}
+
+.query-footer h2 {
+  font-size: 30px;
+}
+
+.query-footer input,
+.query-footer textarea {
+  font-size: 15px;
+  padding: 14px;
+}
+
+.send-btn {
+  width: 160px;
+  padding: 14px 25px;
+  font-size: 15px;
+}
+
+.vertical-line {
+  display: none;
+}
+
+.footer-info {
+  padding: 28px 22px;
+}
+
+.footer-info h2 {
+  font-size: 25px;
+}
+
+.footer-address {
+  font-size: 16px;
+}
+
+.footer-contact-list div {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
 .contact-icon {
   width: 46px;
   height: 46px;
@@ -511,12 +607,21 @@ body {
         <div class="designation">HEAD CONSORT | AAA GROUP</div>
         <div class="region">Oman | UAE | Saudi | India | Europe</div>
       </div>
-    </div>
-<div class="contact-box">
+<div class="footer-info">
+  <h2>AAA Services Trading LLC</h2>
 
-  <a class="contact-item" href="tel:+96894369437">
-    <div class="contact-icon">☎</div>
-    <div class="contact-text">
+  <p class="footer-address">
+    PC 322, Post Box 607<br>
+    Falaj Al Qabail, Sohar<br>
+    Sultanate of Oman
+  </p>
+
+  <div class="footer-contact-list">
+    <div>🌐 www.aaaserves.com</div>
+    <div>✉ aaa@aaaserves.com</div>
+    <div>☎ +968 93822077</div>
+  </div>
+</div>
       <span>Direct Phone</span>
       <strong>+968 94369437</strong>
     </div>
