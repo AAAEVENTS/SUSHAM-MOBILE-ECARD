@@ -580,10 +580,32 @@ body {
   .hr-icon { margin: auto; }
   .hr-box h2 { font-size: 30px; }
   .hr-box p { font-size: 17px; line-height: 1.6; }
-  .query-footer { margin: 0 22px 35px; grid-template-columns: 1fr; padding: 22px; }
-  .vertical-line { display: none; }
-  .footer-info h2 { font-size: 24px; }
-  .footer-info p { font-size: 16px; }
+.query-footer {
+  margin: 0 22px 35px;
+  grid-template-columns: 1fr;
+  padding: 0;
+  overflow: hidden;
+}
+
+.vertical-line {
+  display: none;
+}
+
+.footer-info {
+  padding: 28px 22px;
+}
+
+.footer-info h2 {
+  font-size: 24px;
+}
+
+.footer-address {
+  font-size: 16px;
+}
+
+.footer-contact-list div {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 </style>
 </head>
@@ -611,21 +633,13 @@ body {
         <div class="designation">HEAD CONSORT | AAA GROUP</div>
         <div class="region">Oman | UAE | Saudi | India | Europe</div>
       </div>
-<div class="footer-info">
-  <h2>AAA Services Trading LLC</h2>
-
-  <p class="footer-address">
-    PC 322, Post Box 607<br>
-    Falaj Al Qabail, Sohar<br>
-    Sultanate of Oman
-  </p>
-
-  <div class="footer-contact-list">
-    <div>🌐 www.aaaserves.com</div>
-    <div>✉ aaa@aaaserves.com</div>
-    <div>☎ +968 93822077</div>
-  </div>
 </div>
+
+<div class="contact-box">
+
+  <a class="contact-item" href="tel:+96894369437">
+    <div class="contact-icon">☎</div>
+    <div class="contact-text">
       <span>Direct Phone</span>
       <strong>+968 94369437</strong>
     </div>
@@ -654,8 +668,8 @@ body {
       <strong>www.aaaserves.com</strong>
     </div>
   </a>
-</div>
-    
+
+</div>    
     <div class="innovate-qr">
       <div class="innovate">
         <h2>We Innovate</h2>
@@ -724,12 +738,21 @@ body {
     </div>
   </div>
 </div>
+<div class="footer-info">
+  <h2>AAA Services Trading LLC</h2>
 
-<script>
-function saveContact() {
-  const vCardData = `BEGIN:VCARD
-VERSION:3.0
-FN:Susham S
+  <p class="footer-address">
+    PC 322, Post Box 607<br>
+    Falaj Al Qabail, Sohar<br>
+    Sultanate of Oman
+  </p>
+
+  <div class="footer-contact-list">
+    <div>🌐 www.aaaserves.com</div>
+    <div>✉ aaa@aaaserves.com</div>
+    <div>☎ +968 93822077</div>
+  </div>
+</div>
 N:Susham;S;;;
 ORG:AAA Group
 TITLE:HEAD CONSORT
